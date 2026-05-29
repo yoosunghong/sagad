@@ -2,17 +2,17 @@
 
 This document serves as the single source of truth for the project lifecycle. Refer to this checklist before executing any tasks, and update it immediately upon phase completion. Detailed execution logs must be documented in the `DONE/` directory.
 
-## Phase 1: Environment Setup & Geometric Embedding Baseline ⏳
-- [ ] Initialize repository structure and configure development environments (PyTorch, PyG, UE5).
-- [ ] Implement 3D mesh data pipelines (loading, normalization, and graph conversion using Trimesh/PyTorch Geometric).
-- [ ] Implement or integrate a Mesh Masked Autoencoder (MeshMAE) for self-supervised structural embedding.
-- [ ] Validate latent space representations of initial organic assets (Trees, Rocks).
+## Phase 1: Environment Setup & Geometric Embedding Baseline ✅
+- [x] Initialize repository structure and configure development environments (PyTorch, PyG, UE5).
+- [x] Implement 3D mesh data pipelines (loading, normalization, and graph conversion using Trimesh/PyTorch Geometric).
+- [x] Implement or integrate a Mesh Masked Autoencoder (MeshMAE) for self-supervised structural embedding.
+- [x] Validate latent space representations of initial organic assets (Trees, Rocks).
 
-## Phase 2: Deformation Sandbox & Heuristic Reward Engineering ▢
-- [ ] Develop the 3D deformation simulator applying masks to 4 channels: Bend (R), Noise (G), Scale (B), Fixed (A).
-- [ ] Formulate deterministic geometry & physics penalty functions (Laplacian smoothness, normal consistency, ground contact).
-- [ ] Build a multi-angle rendering pipeline to export synthetic views of deformed assets.
-- [ ] Evaluate a heuristic-driven baseline model without human feedback.
+## Phase 2: Deformation Sandbox & Heuristic Reward Engineering ✅
+- [x] Develop the 3D deformation simulator applying masks to 4 channels: Bend (R), Noise (G), Scale (B), Fixed (A).
+- [x] Formulate deterministic geometry & physics penalty functions (Laplacian smoothness, normal consistency, ground contact).
+- [x] Build a multi-angle rendering pipeline to export synthetic views of deformed assets.
+- [x] Evaluate a heuristic-driven baseline model without human feedback.
 
 ## Phase 3: RLHF Framework & Reward Model Training ▢
 - [ ] Design a lightweight Human-in-the-Loop (HITL) annotation interface (Gradio/Streamlit) for pairwise comparison.

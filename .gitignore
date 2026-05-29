@@ -1,0 +1,91 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg
+*.egg-info/
+dist/
+build/
+eggs/
+parts/
+var/
+sdist/
+develop-eggs/
+.installed.cfg
+lib/
+lib64/
+
+# Virtual environments
+.env
+.venv
+env/
+venv/
+ENV/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# Conda
+.conda/
+
+# PyTorch / ML artifacts
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+runs/
+checkpoints/
+outputs/
+
+# Weights & Biases
+wandb/
+
+# 3D Asset files (large binaries)
+*.fbx
+*.obj
+*.mtl
+*.glb
+*.gltf
+*.usd
+*.usda
+*.usdc
+*.usdz
+*.abc
+*.ply
+*.stl
+
+# Dataset / cache directories
+data/
+datasets/
+cache/
+.cache/
+*.hdf5
+*.h5
+*.npy
+*.npz
+
+# Logs
+logs/
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE
+.vscode/
+.idea/
+*.suo
+*.user
+*.sln.docstates
+.cursor/
+
+# Temp / scratch
+tmp/
+temp/
+scratch/
+verify_env.py
