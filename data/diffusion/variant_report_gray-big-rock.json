@@ -1,0 +1,29 @@
+{
+  "asset": "gray-big-rock",
+  "n_drawn": 300,
+  "n_kept": 150,
+  "distortion_threshold": 0.2074303776025772,
+  "train_distortion_mean": 0.1485869288444519,
+  "sampled_distortion_mean": 0.15178166329860687,
+  "sampled_texture_safe_frac": 0.90234375,
+  "example_variants": [
+    {
+      "bend": 0.5842291116714478,
+      "noise": 0.21590402722358704,
+      "scale": 0.28038403391838074,
+      "base_band": 0.334073543548584
+    },
+    {
+      "bend": 1.0029858350753784,
+      "noise": 0.3288465440273285,
+      "scale": 0.4881431758403778,
+      "base_band": 0.30264097452163696
+    },
+    {
+      "bend": 0.33749282360076904,
+      "noise": 0.4046517312526703,
+      "scale": 0.3415551483631134,
+      "base_band": 0.26035159826278687
+    }
+  ]
+}

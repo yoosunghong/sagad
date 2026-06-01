@@ -58,8 +58,6 @@ wandb/
 *.stl
 
 # Dataset / cache directories
-data/
-datasets/
 cache/
 .cache/
 *.hdf5

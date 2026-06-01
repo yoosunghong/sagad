@@ -1,0 +1,1035 @@
+{
+  "render_dir": "data\\preferences\\renders",
+  "seed": 0,
+  "originals": {
+    "gray-big-rock": "data\\preferences\\meshes\\gray-big-rock_original.glb",
+    "rock_17": "data\\preferences\\meshes\\rock_17_original.glb",
+    "tree": "data\\preferences\\meshes\\tree_original.glb",
+    "tree_1": "data\\preferences\\meshes\\tree_1_original.glb",
+    "tree_2": "data\\preferences\\meshes\\tree_2_original.glb"
+  },
+  "candidates": [
+    {
+      "candidate_id": "gray-big-rock#00",
+      "asset": "gray-big-rock",
+      "gains": {
+        "bend": 0.3237,
+        "noise": 0.041,
+        "scale": 0.0132,
+        "base_band": 0.2774
+      },
+      "noise_seed": 188191822,
+      "render": "data\\preferences\\renders\\gray-big-rock_cand00_contact.png",
+      "mesh": "data\\preferences\\meshes\\gray-big-rock_cand00.glb",
+      "telemetry": {
+        "disp_mean": 0.09297969937324524,
+        "disp_max": 0.3134975731372833,
+        "locked_fraction": 0.06797073036432266,
+        "edge_len_rel_change_max": 0.6768469214439392
+      }
+    },
+    {
+      "candidate_id": "gray-big-rock#01",
+      "asset": "gray-big-rock",
+      "gains": {
+        "bend": 0.728,
+        "noise": 0.7295,
+        "scale": 0.4349,
+        "base_band": 0.3326
+      },
+      "noise_seed": 873242270,
+      "render": "data\\preferences\\renders\\gray-big-rock_cand01_contact.png",
+      "mesh": "data\\preferences\\meshes\\gray-big-rock_cand01.glb",
+      "telemetry": {
+        "disp_mean": 0.21538476645946503,
+        "disp_max": 0.6909688115119934,
+        "locked_fraction": 0.08021390438079834,
+        "edge_len_rel_change_max": 11.22116470336914
+      }
+    },
+    {
+      "candidate_id": "gray-big-rock#02",
+      "asset": "gray-big-rock",
+      "gains": {
+        "bend": 0.979,
+        "noise": 0.0027,
+        "scale": 0.6859,
+        "base_band": 0.337
+      },
+      "noise_seed": 595191111,
+      "render": "data\\preferences\\renders\\gray-big-rock_cand02_contact.png",
+      "mesh": "data\\preferences\\meshes\\gray-big-rock_cand02.glb",
+      "telemetry": {
+        "disp_mean": 0.2840467095375061,
+        "disp_max": 0.9209226965904236,
+        "locked_fraction": 0.08105825632810593,
+        "edge_len_rel_change_max": 1.0602458715438843
+      }
+    },
+    {
+      "candidate_id": "gray-big-rock#03",
+      "asset": "gray-big-rock",
+      "gains": {
+        "bend": 0.2108,
+        "noise": 0.8632,
+        "scale": 0.4332,
+        "base_band": 0.2959
+      },
+      "noise_seed": 36062236,
+      "render": "data\\preferences\\renders\\gray-big-rock_cand03_contact.png",
+      "mesh": "data\\preferences\\meshes\\gray-big-rock_cand03.glb",
+      "telemetry": {
+        "disp_mean": 0.07980652898550034,
+        "disp_max": 0.239695742726326,
+        "locked_fraction": 0.07191105931997299,
+        "edge_len_rel_change_max": 11.775629043579102
+      }
+    },
+    {
+      "candidate_id": "gray-big-rock#04",
+      "asset": "gray-big-rock",
+      "gains": {
+        "bend": 0.5072,
+        "noise": 0.0283,
+        "scale": 0.0994,
+        "base_band": 0.2099
+      },
+      "noise_seed": 8895210,
+      "render": "data\\preferences\\renders\\gray-big-rock_cand04_contact.png",
+      "mesh": "data\\preferences\\meshes\\gray-big-rock_cand04.glb",
+      "telemetry": {
+        "disp_mean": 0.1459321826696396,
+        "disp_max": 0.48928841948509216,
+        "locked_fraction": 0.052490852773189545,
+        "edge_len_rel_change_max": 0.499538779258728
+      }
+    },
+    {
+      "candidate_id": "gray-big-rock#05",
+      "asset": "gray-big-rock",
+      "gains": {
+        "bend": 0.7385,
+        "noise": 0.3837,
+        "scale": 0.7978,
+        "base_band": 0.2794
+      },
+      "noise_seed": 720077482,
+      "render": "data\\preferences\\renders\\gray-big-rock_cand05_contact.png",
+      "mesh": "data\\preferences\\meshes\\gray-big-rock_cand05.glb",
+      "telemetry": {
+        "disp_mean": 0.22465237975120544,
+        "disp_max": 0.7086461186408997,
+        "locked_fraction": 0.06811145693063736,
+        "edge_len_rel_change_max": 4.747946262359619
+      }
+    },
+    {
+      "candidate_id": "rock_17#00",
+      "asset": "rock_17",
+      "gains": {
+        "bend": 0.8227,
+        "noise": 0.6505,
+        "scale": 0.5508,
+        "base_band": 0.3462
+      },
+      "noise_seed": 755915371,
+      "render": "data\\preferences\\renders\\rock_17_cand00_contact.png",
+      "mesh": "data\\preferences\\meshes\\rock_17_cand00.glb",
+      "telemetry": {
+        "disp_mean": 0.20250895619392395,
+        "disp_max": 0.828463077545166,
+        "locked_fraction": 0.09116692841053009,
+        "edge_len_rel_change_max": 10.959296226501465
+      }
+    },
+    {
+      "candidate_id": "rock_17#01",
+      "asset": "rock_17",
+      "gains": {
+        "bend": 0.8658,
+        "noise": 0.5254,
+        "scale": 0.2482,
+        "base_band": 0.177
+      },
+      "noise_seed": 417601199,
+      "render": "data\\preferences\\renders\\rock_17_cand01_contact.png",
+      "mesh": "data\\preferences\\meshes\\rock_17_cand01.glb",
+      "telemetry": {
+        "disp_mean": 0.21333760023117065,
+        "disp_max": 0.872154176235199,
+        "locked_fraction": 0.025792500004172325,
+        "edge_len_rel_change_max": 8.85962963104248
+      }
+    },
+    {
+      "candidate_id": "rock_17#02",
+      "asset": "rock_17",
+      "gains": {
+        "bend": 1.0674,
+        "noise": 0.934,
+        "scale": 0.2862,
+        "base_band": 0.2472
+      },
+      "noise_seed": 722348404,
+      "render": "data\\preferences\\renders\\rock_17_cand02_contact.png",
+      "mesh": "data\\preferences\\meshes\\rock_17_cand02.glb",
+      "telemetry": {
+        "disp_mean": 0.2629779875278473,
+        "disp_max": 1.0083434581756592,
+        "locked_fraction": 0.04896814376115799,
+        "edge_len_rel_change_max": 21.30478858947754
+      }
+    },
+    {
+      "candidate_id": "rock_17#03",
+      "asset": "rock_17",
+      "gains": {
+        "bend": 0.7132,
+        "noise": 0.3379,
+        "scale": 0.3133,
+        "base_band": 0.2144
+      },
+      "noise_seed": 613675482,
+      "render": "data\\preferences\\renders\\rock_17_cand03_contact.png",
+      "mesh": "data\\preferences\\meshes\\rock_17_cand03.glb",
+      "telemetry": {
+        "disp_mean": 0.17613783478736877,
+        "disp_max": 0.7230475544929504,
+        "locked_fraction": 0.03662033751606941,
+        "edge_len_rel_change_max": 1.7170063257217407
+      }
+    },
+    {
+      "candidate_id": "rock_17#04",
+      "asset": "rock_17",
+      "gains": {
+        "bend": 0.2726,
+        "noise": 0.6232,
+        "scale": 0.0672,
+        "base_band": 0.3281
+      },
+      "noise_seed": 404949807,
+      "render": "data\\preferences\\renders\\rock_17_cand04_contact.png",
+      "mesh": "data\\preferences\\meshes\\rock_17_cand04.glb",
+      "telemetry": {
+        "disp_mean": 0.06648320704698563,
+        "disp_max": 0.28079596161842346,
+        "locked_fraction": 0.08265822380781174,
+        "edge_len_rel_change_max": 4.599693298339844
+      }
+    },
+    {
+      "candidate_id": "rock_17#05",
+      "asset": "rock_17",
+      "gains": {
+        "bend": 0.2872,
+        "noise": 0.8765,
+        "scale": 0.0469,
+        "base_band": 0.3074
+      },
+      "noise_seed": 894044845,
+      "render": "data\\preferences\\renders\\rock_17_cand05_contact.png",
+      "mesh": "data\\preferences\\meshes\\rock_17_cand05.glb",
+      "telemetry": {
+        "disp_mean": 0.07532523572444916,
+        "disp_max": 0.31574708223342896,
+        "locked_fraction": 0.07366375625133514,
+        "edge_len_rel_change_max": 14.224822998046875
+      }
+    },
+    {
+      "candidate_id": "tree#00",
+      "asset": "tree",
+      "gains": {
+        "bend": 0.1803,
+        "noise": 0.4503,
+        "scale": 0.6371,
+        "base_band": 0.2172
+      },
+      "noise_seed": 757355867,
+      "render": "data\\preferences\\renders\\tree_cand00_contact.png",
+      "mesh": "data\\preferences\\meshes\\tree_cand00.glb",
+      "telemetry": {
+        "disp_mean": 0.03970280662178993,
+        "disp_max": 0.11927327513694763,
+        "locked_fraction": 0.0012211204739287496,
+        "edge_len_rel_change_max": 113.31919860839844
+      }
+    },
+    {
+      "candidate_id": "tree#01",
+      "asset": "tree",
+      "gains": {
+        "bend": 0.4855,
+        "noise": 0.1985,
+        "scale": 0.0726,
+        "base_band": 0.1604
+      },
+      "noise_seed": 247650186,
+      "render": "data\\preferences\\renders\\tree_cand01_contact.png",
+      "mesh": "data\\preferences\\meshes\\tree_cand01.glb",
+      "telemetry": {
+        "disp_mean": 0.05712152644991875,
+        "disp_max": 0.30811432003974915,
+        "locked_fraction": 0.0008303619688376784,
+        "edge_len_rel_change_max": 3.800549268722534
+      }
+    },
+    {
+      "candidate_id": "tree#02",
+      "asset": "tree",
+      "gains": {
+        "bend": 0.3584,
+        "noise": 0.672,
+        "scale": 0.1596,
+        "base_band": 0.2661
+      },
+      "noise_seed": 814156345,
+      "render": "data\\preferences\\renders\\tree_cand02_contact.png",
+      "mesh": "data\\preferences\\meshes\\tree_cand02.glb",
+      "telemetry": {
+        "disp_mean": 0.04300546646118164,
+        "disp_max": 0.22347591817378998,
+        "locked_fraction": 0.001807258347980678,
+        "edge_len_rel_change_max": 22.019710540771484
+      }
+    },
+    {
+      "candidate_id": "tree#03",
+      "asset": "tree",
+      "gains": {
+        "bend": 0.1266,
+        "noise": 0.6291,
+        "scale": 0.7417,
+        "base_band": 0.223
+      },
+      "noise_seed": 1011586249,
+      "render": "data\\preferences\\renders\\tree_cand03_contact.png",
+      "mesh": "data\\preferences\\meshes\\tree_cand03.glb",
+      "telemetry": {
+        "disp_mean": 0.04257136583328247,
+        "disp_max": 0.13171783089637756,
+        "locked_fraction": 0.001269965316168964,
+        "edge_len_rel_change_max": 199.11770629882812
+      }
+    },
+    {
+      "candidate_id": "tree#04",
+      "asset": "tree",
+      "gains": {
+        "bend": 1.1455,
+        "noise": 0.4999,
+        "scale": 0.3402,
+        "base_band": 0.2381
+      },
+      "noise_seed": 1015022508,
+      "render": "data\\preferences\\renders\\tree_cand04_contact.png",
+      "mesh": "data\\preferences\\meshes\\tree_cand04.glb",
+      "telemetry": {
+        "disp_mean": 0.13449464738368988,
+        "disp_max": 0.6516355276107788,
+        "locked_fraction": 0.0013188101584091783,
+        "edge_len_rel_change_max": 49.3736572265625
+      }
+    },
+    {
+      "candidate_id": "tree#05",
+      "asset": "tree",
+      "gains": {
+        "bend": 1.1387,
+        "noise": 0.46,
+        "scale": 0.6062,
+        "base_band": 0.349
+      },
+      "noise_seed": 665949123,
+      "render": "data\\preferences\\renders\\tree_cand05_contact.png",
+      "mesh": "data\\preferences\\meshes\\tree_cand05.glb",
+      "telemetry": {
+        "disp_mean": 0.13645286858081818,
+        "disp_max": 0.6367382407188416,
+        "locked_fraction": 0.0026376203168183565,
+        "edge_len_rel_change_max": 202.63150024414062
+      }
+    },
+    {
+      "candidate_id": "tree_1#00",
+      "asset": "tree_1",
+      "gains": {
+        "bend": 0.6352,
+        "noise": 0.7858,
+        "scale": 0.3317,
+        "base_band": 0.2495
+      },
+      "noise_seed": 302645845,
+      "render": "data\\preferences\\renders\\tree_1_cand00_contact.png",
+      "mesh": "data\\preferences\\meshes\\tree_1_cand00.glb",
+      "telemetry": {
+        "disp_mean": 0.12183068692684174,
+        "disp_max": 0.7093572616577148,
+        "locked_fraction": 0.014085966162383556,
+        "edge_len_rel_change_max": 13.670741081237793
+      }
+    },
+    {
+      "candidate_id": "tree_1#01",
+      "asset": "tree_1",
+      "gains": {
+        "bend": 1.1185,
+        "noise": 0.1149,
+        "scale": 0.5832,
+        "base_band": 0.2922
+      },
+      "noise_seed": 788645730,
+      "render": "data\\preferences\\renders\\tree_1_cand01_contact.png",
+      "mesh": "data\\preferences\\meshes\\tree_1_cand01.glb",
+      "telemetry": {
+        "disp_mean": 0.21030576527118683,
+        "disp_max": 1.0936591625213623,
+        "locked_fraction": 0.021122856065630913,
+        "edge_len_rel_change_max": 1.8652695417404175
+      }
+    },
+    {
+      "candidate_id": "tree_1#02",
+      "asset": "tree_1",
+      "gains": {
+        "bend": 1.1615,
+        "noise": 0.0147,
+        "scale": 0.6909,
+        "base_band": 0.3355
+      },
+      "noise_seed": 88431938,
+      "render": "data\\preferences\\renders\\tree_1_cand02_contact.png",
+      "mesh": "data\\preferences\\meshes\\tree_1_cand02.glb",
+      "telemetry": {
+        "disp_mean": 0.21748360991477966,
+        "disp_max": 1.0930745601654053,
+        "locked_fraction": 0.029749901965260506,
+        "edge_len_rel_change_max": 0.8161553740501404
+      }
+    },
+    {
+      "candidate_id": "tree_1#03",
+      "asset": "tree_1",
+      "gains": {
+        "bend": 0.1785,
+        "noise": 0.9726,
+        "scale": 0.7119,
+        "base_band": 0.3414
+      },
+      "noise_seed": 1053550152,
+      "render": "data\\preferences\\renders\\tree_1_cand03_contact.png",
+      "mesh": "data\\preferences\\meshes\\tree_1_cand03.glb",
+      "telemetry": {
+        "disp_mean": 0.05802386626601219,
+        "disp_max": 0.2536834478378296,
+        "locked_fraction": 0.03096841089427471,
+        "edge_len_rel_change_max": 9.201445579528809
+      }
+    },
+    {
+      "candidate_id": "tree_1#04",
+      "asset": "tree_1",
+      "gains": {
+        "bend": 0.576,
+        "noise": 0.2324,
+        "scale": 0.6415,
+        "base_band": 0.3145
+      },
+      "noise_seed": 149954618,
+      "render": "data\\preferences\\renders\\tree_1_cand04_contact.png",
+      "mesh": "data\\preferences\\meshes\\tree_1_cand04.glb",
+      "telemetry": {
+        "disp_mean": 0.11561388522386551,
+        "disp_max": 0.6576381325721741,
+        "locked_fraction": 0.025582600384950638,
+        "edge_len_rel_change_max": 7.961968898773193
+      }
+    },
+    {
+      "candidate_id": "tree_1#05",
+      "asset": "tree_1",
+      "gains": {
+        "bend": 0.6467,
+        "noise": 0.4428,
+        "scale": 0.7448,
+        "base_band": 0.2032
+      },
+      "noise_seed": 991632958,
+      "render": "data\\preferences\\renders\\tree_1_cand05_contact.png",
+      "mesh": "data\\preferences\\meshes\\tree_1_cand05.glb",
+      "telemetry": {
+        "disp_mean": 0.13496360182762146,
+        "disp_max": 0.7398412227630615,
+        "locked_fraction": 0.008066530339419842,
+        "edge_len_rel_change_max": 18.621578216552734
+      }
+    },
+    {
+      "candidate_id": "tree_2#00",
+      "asset": "tree_2",
+      "gains": {
+        "bend": 0.8784,
+        "noise": 0.6144,
+        "scale": 0.0227,
+        "base_band": 0.1581
+      },
+      "noise_seed": 995787590,
+      "render": "data\\preferences\\renders\\tree_2_cand00_contact.png",
+      "mesh": "data\\preferences\\meshes\\tree_2_cand00.glb",
+      "telemetry": {
+        "disp_mean": 0.16830816864967346,
+        "disp_max": 0.8049699664115906,
+        "locked_fraction": 0.004310344811528921,
+        "edge_len_rel_change_max": 9.47945785522461
+      }
+    },
+    {
+      "candidate_id": "tree_2#01",
+      "asset": "tree_2",
+      "gains": {
+        "bend": 0.9095,
+        "noise": 0.5128,
+        "scale": 0.7433,
+        "base_band": 0.1532
+      },
+      "noise_seed": 772256350,
+      "render": "data\\preferences\\renders\\tree_2_cand01_contact.png",
+      "mesh": "data\\preferences\\meshes\\tree_2_cand01.glb",
+      "telemetry": {
+        "disp_mean": 0.18289130926132202,
+        "disp_max": 0.7806411385536194,
+        "locked_fraction": 0.004310344811528921,
+        "edge_len_rel_change_max": 6.581844806671143
+      }
+    },
+    {
+      "candidate_id": "tree_2#02",
+      "asset": "tree_2",
+      "gains": {
+        "bend": 1.0096,
+        "noise": 0.0667,
+        "scale": 0.2754,
+        "base_band": 0.1632
+      },
+      "noise_seed": 242896187,
+      "render": "data\\preferences\\renders\\tree_2_cand02_contact.png",
+      "mesh": "data\\preferences\\meshes\\tree_2_cand02.glb",
+      "telemetry": {
+        "disp_mean": 0.19214145839214325,
+        "disp_max": 0.8895806074142456,
+        "locked_fraction": 0.004310344811528921,
+        "edge_len_rel_change_max": 2.8027541637420654
+      }
+    },
+    {
+      "candidate_id": "tree_2#03",
+      "asset": "tree_2",
+      "gains": {
+        "bend": 0.6747,
+        "noise": 0.2589,
+        "scale": 0.1933,
+        "base_band": 0.3432
+      },
+      "noise_seed": 462029745,
+      "render": "data\\preferences\\renders\\tree_2_cand03_contact.png",
+      "mesh": "data\\preferences\\meshes\\tree_2_cand03.glb",
+      "telemetry": {
+        "disp_mean": 0.12803614139556885,
+        "disp_max": 0.6026319265365601,
+        "locked_fraction": 0.022727271541953087,
+        "edge_len_rel_change_max": 2.7745654582977295
+      }
+    },
+    {
+      "candidate_id": "tree_2#04",
+      "asset": "tree_2",
+      "gains": {
+        "bend": 0.271,
+        "noise": 0.1246,
+        "scale": 0.2307,
+        "base_band": 0.3276
+      },
+      "noise_seed": 861115265,
+      "render": "data\\preferences\\renders\\tree_2_cand04_contact.png",
+      "mesh": "data\\preferences\\meshes\\tree_2_cand04.glb",
+      "telemetry": {
+        "disp_mean": 0.05434897169470787,
+        "disp_max": 0.24048607051372528,
+        "locked_fraction": 0.021943572908639908,
+        "edge_len_rel_change_max": 1.4765790700912476
+      }
+    },
+    {
+      "candidate_id": "tree_2#05",
+      "asset": "tree_2",
+      "gains": {
+        "bend": 0.9717,
+        "noise": 0.5605,
+        "scale": 0.2307,
+        "base_band": 0.2608
+      },
+      "noise_seed": 629344848,
+      "render": "data\\preferences\\renders\\tree_2_cand05_contact.png",
+      "mesh": "data\\preferences\\meshes\\tree_2_cand05.glb",
+      "telemetry": {
+        "disp_mean": 0.1849786639213562,
+        "disp_max": 0.8512969017028809,
+        "locked_fraction": 0.012147335335612297,
+        "edge_len_rel_change_max": 53.146873474121094
+      }
+    }
+  ],
+  "pairs": [
+    {
+      "pair_id": "gray-big-rock|000",
+      "asset": "gray-big-rock",
+      "a": "gray-big-rock#01",
+      "b": "gray-big-rock#00"
+    },
+    {
+      "pair_id": "gray-big-rock|001",
+      "asset": "gray-big-rock",
+      "a": "gray-big-rock#00",
+      "b": "gray-big-rock#02"
+    },
+    {
+      "pair_id": "gray-big-rock|002",
+      "asset": "gray-big-rock",
+      "a": "gray-big-rock#00",
+      "b": "gray-big-rock#03"
+    },
+    {
+      "pair_id": "gray-big-rock|003",
+      "asset": "gray-big-rock",
+      "a": "gray-big-rock#00",
+      "b": "gray-big-rock#04"
+    },
+    {
+      "pair_id": "gray-big-rock|004",
+      "asset": "gray-big-rock",
+      "a": "gray-big-rock#05",
+      "b": "gray-big-rock#00"
+    },
+    {
+      "pair_id": "gray-big-rock|005",
+      "asset": "gray-big-rock",
+      "a": "gray-big-rock#01",
+      "b": "gray-big-rock#02"
+    },
+    {
+      "pair_id": "gray-big-rock|006",
+      "asset": "gray-big-rock",
+      "a": "gray-big-rock#01",
+      "b": "gray-big-rock#03"
+    },
+    {
+      "pair_id": "gray-big-rock|007",
+      "asset": "gray-big-rock",
+      "a": "gray-big-rock#01",
+      "b": "gray-big-rock#04"
+    },
+    {
+      "pair_id": "gray-big-rock|008",
+      "asset": "gray-big-rock",
+      "a": "gray-big-rock#05",
+      "b": "gray-big-rock#01"
+    },
+    {
+      "pair_id": "gray-big-rock|009",
+      "asset": "gray-big-rock",
+      "a": "gray-big-rock#03",
+      "b": "gray-big-rock#02"
+    },
+    {
+      "pair_id": "gray-big-rock|010",
+      "asset": "gray-big-rock",
+      "a": "gray-big-rock#02",
+      "b": "gray-big-rock#04"
+    },
+    {
+      "pair_id": "gray-big-rock|011",
+      "asset": "gray-big-rock",
+      "a": "gray-big-rock#05",
+      "b": "gray-big-rock#02"
+    },
+    {
+      "pair_id": "gray-big-rock|012",
+      "asset": "gray-big-rock",
+      "a": "gray-big-rock#03",
+      "b": "gray-big-rock#04"
+    },
+    {
+      "pair_id": "gray-big-rock|013",
+      "asset": "gray-big-rock",
+      "a": "gray-big-rock#05",
+      "b": "gray-big-rock#03"
+    },
+    {
+      "pair_id": "gray-big-rock|014",
+      "asset": "gray-big-rock",
+      "a": "gray-big-rock#04",
+      "b": "gray-big-rock#05"
+    },
+    {
+      "pair_id": "rock_17|000",
+      "asset": "rock_17",
+      "a": "rock_17#01",
+      "b": "rock_17#00"
+    },
+    {
+      "pair_id": "rock_17|001",
+      "asset": "rock_17",
+      "a": "rock_17#02",
+      "b": "rock_17#00"
+    },
+    {
+      "pair_id": "rock_17|002",
+      "asset": "rock_17",
+      "a": "rock_17#03",
+      "b": "rock_17#00"
+    },
+    {
+      "pair_id": "rock_17|003",
+      "asset": "rock_17",
+      "a": "rock_17#00",
+      "b": "rock_17#04"
+    },
+    {
+      "pair_id": "rock_17|004",
+      "asset": "rock_17",
+      "a": "rock_17#05",
+      "b": "rock_17#00"
+    },
+    {
+      "pair_id": "rock_17|005",
+      "asset": "rock_17",
+      "a": "rock_17#01",
+      "b": "rock_17#02"
+    },
+    {
+      "pair_id": "rock_17|006",
+      "asset": "rock_17",
+      "a": "rock_17#01",
+      "b": "rock_17#03"
+    },
+    {
+      "pair_id": "rock_17|007",
+      "asset": "rock_17",
+      "a": "rock_17#04",
+      "b": "rock_17#01"
+    },
+    {
+      "pair_id": "rock_17|008",
+      "asset": "rock_17",
+      "a": "rock_17#01",
+      "b": "rock_17#05"
+    },
+    {
+      "pair_id": "rock_17|009",
+      "asset": "rock_17",
+      "a": "rock_17#03",
+      "b": "rock_17#02"
+    },
+    {
+      "pair_id": "rock_17|010",
+      "asset": "rock_17",
+      "a": "rock_17#04",
+      "b": "rock_17#02"
+    },
+    {
+      "pair_id": "rock_17|011",
+      "asset": "rock_17",
+      "a": "rock_17#05",
+      "b": "rock_17#02"
+    },
+    {
+      "pair_id": "rock_17|012",
+      "asset": "rock_17",
+      "a": "rock_17#04",
+      "b": "rock_17#03"
+    },
+    {
+      "pair_id": "rock_17|013",
+      "asset": "rock_17",
+      "a": "rock_17#03",
+      "b": "rock_17#05"
+    },
+    {
+      "pair_id": "rock_17|014",
+      "asset": "rock_17",
+      "a": "rock_17#04",
+      "b": "rock_17#05"
+    },
+    {
+      "pair_id": "tree|000",
+      "asset": "tree",
+      "a": "tree#01",
+      "b": "tree#00"
+    },
+    {
+      "pair_id": "tree|001",
+      "asset": "tree",
+      "a": "tree#02",
+      "b": "tree#00"
+    },
+    {
+      "pair_id": "tree|002",
+      "asset": "tree",
+      "a": "tree#00",
+      "b": "tree#03"
+    },
+    {
+      "pair_id": "tree|003",
+      "asset": "tree",
+      "a": "tree#00",
+      "b": "tree#04"
+    },
+    {
+      "pair_id": "tree|004",
+      "asset": "tree",
+      "a": "tree#00",
+      "b": "tree#05"
+    },
+    {
+      "pair_id": "tree|005",
+      "asset": "tree",
+      "a": "tree#02",
+      "b": "tree#01"
+    },
+    {
+      "pair_id": "tree|006",
+      "asset": "tree",
+      "a": "tree#01",
+      "b": "tree#03"
+    },
+    {
+      "pair_id": "tree|007",
+      "asset": "tree",
+      "a": "tree#04",
+      "b": "tree#01"
+    },
+    {
+      "pair_id": "tree|008",
+      "asset": "tree",
+      "a": "tree#05",
+      "b": "tree#01"
+    },
+    {
+      "pair_id": "tree|009",
+      "asset": "tree",
+      "a": "tree#02",
+      "b": "tree#03"
+    },
+    {
+      "pair_id": "tree|010",
+      "asset": "tree",
+      "a": "tree#02",
+      "b": "tree#04"
+    },
+    {
+      "pair_id": "tree|011",
+      "asset": "tree",
+      "a": "tree#02",
+      "b": "tree#05"
+    },
+    {
+      "pair_id": "tree|012",
+      "asset": "tree",
+      "a": "tree#03",
+      "b": "tree#04"
+    },
+    {
+      "pair_id": "tree|013",
+      "asset": "tree",
+      "a": "tree#03",
+      "b": "tree#05"
+    },
+    {
+      "pair_id": "tree|014",
+      "asset": "tree",
+      "a": "tree#04",
+      "b": "tree#05"
+    },
+    {
+      "pair_id": "tree_1|000",
+      "asset": "tree_1",
+      "a": "tree_1#00",
+      "b": "tree_1#01"
+    },
+    {
+      "pair_id": "tree_1|001",
+      "asset": "tree_1",
+      "a": "tree_1#02",
+      "b": "tree_1#00"
+    },
+    {
+      "pair_id": "tree_1|002",
+      "asset": "tree_1",
+      "a": "tree_1#03",
+      "b": "tree_1#00"
+    },
+    {
+      "pair_id": "tree_1|003",
+      "asset": "tree_1",
+      "a": "tree_1#00",
+      "b": "tree_1#04"
+    },
+    {
+      "pair_id": "tree_1|004",
+      "asset": "tree_1",
+      "a": "tree_1#00",
+      "b": "tree_1#05"
+    },
+    {
+      "pair_id": "tree_1|005",
+      "asset": "tree_1",
+      "a": "tree_1#02",
+      "b": "tree_1#01"
+    },
+    {
+      "pair_id": "tree_1|006",
+      "asset": "tree_1",
+      "a": "tree_1#03",
+      "b": "tree_1#01"
+    },
+    {
+      "pair_id": "tree_1|007",
+      "asset": "tree_1",
+      "a": "tree_1#01",
+      "b": "tree_1#04"
+    },
+    {
+      "pair_id": "tree_1|008",
+      "asset": "tree_1",
+      "a": "tree_1#01",
+      "b": "tree_1#05"
+    },
+    {
+      "pair_id": "tree_1|009",
+      "asset": "tree_1",
+      "a": "tree_1#02",
+      "b": "tree_1#03"
+    },
+    {
+      "pair_id": "tree_1|010",
+      "asset": "tree_1",
+      "a": "tree_1#04",
+      "b": "tree_1#02"
+    },
+    {
+      "pair_id": "tree_1|011",
+      "asset": "tree_1",
+      "a": "tree_1#02",
+      "b": "tree_1#05"
+    },
+    {
+      "pair_id": "tree_1|012",
+      "asset": "tree_1",
+      "a": "tree_1#03",
+      "b": "tree_1#04"
+    },
+    {
+      "pair_id": "tree_1|013",
+      "asset": "tree_1",
+      "a": "tree_1#05",
+      "b": "tree_1#03"
+    },
+    {
+      "pair_id": "tree_1|014",
+      "asset": "tree_1",
+      "a": "tree_1#04",
+      "b": "tree_1#05"
+    },
+    {
+      "pair_id": "tree_2|000",
+      "asset": "tree_2",
+      "a": "tree_2#00",
+      "b": "tree_2#01"
+    },
+    {
+      "pair_id": "tree_2|001",
+      "asset": "tree_2",
+      "a": "tree_2#02",
+      "b": "tree_2#00"
+    },
+    {
+      "pair_id": "tree_2|002",
+      "asset": "tree_2",
+      "a": "tree_2#00",
+      "b": "tree_2#03"
+    },
+    {
+      "pair_id": "tree_2|003",
+      "asset": "tree_2",
+      "a": "tree_2#00",
+      "b": "tree_2#04"
+    },
+    {
+      "pair_id": "tree_2|004",
+      "asset": "tree_2",
+      "a": "tree_2#00",
+      "b": "tree_2#05"
+    },
+    {
+      "pair_id": "tree_2|005",
+      "asset": "tree_2",
+      "a": "tree_2#02",
+      "b": "tree_2#01"
+    },
+    {
+      "pair_id": "tree_2|006",
+      "asset": "tree_2",
+      "a": "tree_2#03",
+      "b": "tree_2#01"
+    },
+    {
+      "pair_id": "tree_2|007",
+      "asset": "tree_2",
+      "a": "tree_2#01",
+      "b": "tree_2#04"
+    },
+    {
+      "pair_id": "tree_2|008",
+      "asset": "tree_2",
+      "a": "tree_2#05",
+      "b": "tree_2#01"
+    },
+    {
+      "pair_id": "tree_2|009",
+      "asset": "tree_2",
+      "a": "tree_2#02",
+      "b": "tree_2#03"
+    },
+    {
+      "pair_id": "tree_2|010",
+      "asset": "tree_2",
+      "a": "tree_2#02",
+      "b": "tree_2#04"
+    },
+    {
+      "pair_id": "tree_2|011",
+      "asset": "tree_2",
+      "a": "tree_2#02",
+      "b": "tree_2#05"
+    },
+    {
+      "pair_id": "tree_2|012",
+      "asset": "tree_2",
+      "a": "tree_2#04",
+      "b": "tree_2#03"
+    },
+    {
+      "pair_id": "tree_2|013",
+      "asset": "tree_2",
+      "a": "tree_2#05",
+      "b": "tree_2#03"
+    },
+    {
+      "pair_id": "tree_2|014",
+      "asset": "tree_2",
+      "a": "tree_2#04",
+      "b": "tree_2#05"
+    }
+  ]
+}

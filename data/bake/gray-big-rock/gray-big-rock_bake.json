@@ -1,0 +1,50 @@
+{
+  "asset": "gray-big-rock",
+  "mask_source": "policy",
+  "channel_map": {
+    "R": "bend",
+    "G": "noise",
+    "B": "scale",
+    "A": "mobility (1 - fixed)"
+  },
+  "num_vertices": 7106,
+  "seam": {
+    "vertices": 7106,
+    "unique_positions": 6971,
+    "seam_groups": 135,
+    "seam_vertices": 135,
+    "max_rgba_shift_from_merge": 0.34858524799346924,
+    "merge_decimals": 5
+  },
+  "transform": {
+    "source_centroid": [
+      -0.27549222966507253,
+      2.303736977483831,
+      0.06759504432873716
+    ],
+    "source_scale": 5.341110311764202,
+    "note": "mesh exported in unit-bounding-sphere normalized space; rescale on UE import or author WPO constants accordingly."
+  },
+  "mask_means": {
+    "bend": 0.45555582642555237,
+    "noise": 0.5317230224609375,
+    "scale": 0.44520360231399536,
+    "mobility": 0.4460788667201996
+  },
+  "deform_telemetry": {
+    "num_vertices": 7106,
+    "locked_fraction": 0.0,
+    "off_bend_mean": 0.17842689156532288,
+    "off_noise_mean": 0.019315676763653755,
+    "off_scale_mean": 0.042891763150691986,
+    "disp_mean": 0.172559455037117,
+    "disp_max": 0.8277022242546082,
+    "edge_len_rel_change_mean": 0.3245343565940857,
+    "edge_len_rel_change_max": 36.49525451660156,
+    "edge_len_rel_change_p99": 7.224996089935303
+  },
+  "outputs": {
+    "baked_glb": "gray-big-rock_baked.glb",
+    "preview_glb": "gray-big-rock_preview.glb"
+  }
+}

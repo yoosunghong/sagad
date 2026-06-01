@@ -1,0 +1,86 @@
+{
+  "weights": {
+    "variety": 1.0,
+    "distortion": 1.0,
+    "physics": 1.0
+  },
+  "candidates_per_asset": 6,
+  "seed": 0,
+  "per_asset": [
+    {
+      "asset": "gray-big-rock",
+      "num_vertices": 7106,
+      "best": {
+        "reward": 0.21636890270747244,
+        "variety": 0.24069999158382416,
+        "distortion": 0.024331088876351714,
+        "physics": 0.0,
+        "candidate": 2
+      },
+      "mean_reward": 0.16825638810405508,
+      "reward_std": 0.05307850630493763,
+      "batch_diversity": 0.10561595857143402
+    },
+    {
+      "asset": "rock_17",
+      "num_vertices": 63817,
+      "best": {
+        "reward": 0.1161333080381155,
+        "variety": 0.1387893557548523,
+        "distortion": 0.022656047716736794,
+        "physics": 0.0,
+        "candidate": 4
+      },
+      "mean_reward": 0.002800148766255006,
+      "reward_std": 0.08220780043912276,
+      "batch_diversity": 0.06776294857263565
+    },
+    {
+      "asset": "tree",
+      "num_vertices": 20473,
+      "best": {
+        "reward": -0.06919403560459614,
+        "variety": 0.104080930352211,
+        "distortion": 0.17327496595680714,
+        "physics": 0.0,
+        "candidate": 2
+      },
+      "mean_reward": -0.11271359472690771,
+      "reward_std": 0.0311949439130633,
+      "batch_diversity": 0.040039267390966415
+    },
+    {
+      "asset": "tree_1",
+      "num_vertices": 164135,
+      "best": {
+        "reward": 0.07427655172068626,
+        "variety": 0.12812235951423645,
+        "distortion": 0.05384580779355019,
+        "physics": 0.0,
+        "candidate": 5
+      },
+      "mean_reward": -0.08751821329739566,
+      "reward_std": 0.08512553863798168,
+      "batch_diversity": 0.05125311017036438
+    },
+    {
+      "asset": "tree_2",
+      "num_vertices": 2552,
+      "best": {
+        "reward": 0.13657973799854517,
+        "variety": 0.19044706225395203,
+        "distortion": 0.05386732425540686,
+        "physics": 0.0,
+        "candidate": 2
+      },
+      "mean_reward": 0.037772877529884376,
+      "reward_std": 0.08526969502684043,
+      "batch_diversity": 0.07969408482313156
+    }
+  ],
+  "aggregate": {
+    "mean_best_reward": 0.09483289297204464,
+    "mean_batch_diversity": 0.0688730739057064,
+    "num_assets": 5
+  }
+}
