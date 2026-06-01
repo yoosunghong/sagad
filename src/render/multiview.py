@@ -41,13 +41,18 @@ class RenderConfig:
     background: tuple[float, float, float] = (1.0, 1.0, 1.0)
 
 
-def _to_o3d(mesh: trimesh.Trimesh, color: tuple[float, float, float]
+def _to_o3d(mesh: trimesh.Trimesh, color: tuple[float, float, float],
+            vertex_colors: np.ndarray | None = None
             ) -> o3d.geometry.TriangleMesh:
     om = o3d.geometry.TriangleMesh()
     om.vertices = o3d.utility.Vector3dVector(np.asarray(mesh.vertices, dtype=np.float64))
     om.triangles = o3d.utility.Vector3iVector(np.asarray(mesh.faces, dtype=np.int32))
     om.compute_vertex_normals()
-    om.paint_uniform_color(list(color))
+    if vertex_colors is not None:
+        vc = np.asarray(vertex_colors, dtype=np.float64)[:, :3]
+        om.vertex_colors = o3d.utility.Vector3dVector(np.clip(vc, 0.0, 1.0))
+    else:
+        om.paint_uniform_color(list(color))
     return om
 
 
@@ -71,9 +76,14 @@ def _look_at(eye: np.ndarray, center: np.ndarray, up: np.ndarray) -> np.ndarray:
     return extr
 
 
-def render_multiview(mesh: trimesh.Trimesh, config: RenderConfig | None = None
+def render_multiview(mesh: trimesh.Trimesh, config: RenderConfig | None = None,
+                     vertex_colors: np.ndarray | None = None
                      ) -> np.ndarray:
-    """Render ``mesh`` from ``n_views`` orbit cameras -> ``(V, H, W, 3) uint8``."""
+    """Render ``mesh`` from ``n_views`` orbit cameras -> ``(V, H, W, 3) uint8``.
+
+    ``vertex_colors`` (optional ``(N, 3)`` floats in ``[0, 1]``) shades the mesh
+    per vertex (e.g. a displacement heatmap) instead of the flat ``cfg.color``.
+    """
     cfg = config or RenderConfig()
     up = np.asarray(cfg.up_axis, dtype=np.float64)
     up /= np.linalg.norm(up) + 1e-12
@@ -83,7 +93,7 @@ def render_multiview(mesh: trimesh.Trimesh, config: RenderConfig | None = None
     radius = float(np.linalg.norm(verts - center, axis=1).max())
     distance = cfg.distance_scale * max(radius, 1e-6)
 
-    om = _to_o3d(mesh, cfg.color)
+    om = _to_o3d(mesh, cfg.color, vertex_colors=vertex_colors)
 
     vis = o3d.visualization.Visualizer()
     if not vis.create_window(width=cfg.image_size, height=cfg.image_size, visible=False):

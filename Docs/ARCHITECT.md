@@ -90,6 +90,43 @@ The system is split into two primary runtime blocks: the **Training Loop (Python
   * **Bootstrap / validation harness:** `scripts/build_preference_pairs.py` → `scripts/annotate_ui.py` collects real labels; pending a human annotator, `scripts/simulate_preferences.py` emits a **synthetic-oracle** label set (Bradley-Terry-sampled from the deterministic Phase 2 heuristic reward, reconstructed from the manifest gains) so the trainer is exercised on the *same* `to_comparisons()` interface. `scripts/train_reward_model.py` trains and reports **held-out pairwise accuracy** and **rank correlation** (Spearman/Pearson) of the learned reward against the oracle / qualitative scores — the "correlation with human qualitative scores" gate of this section.
 * **Diversity Evaluator:** Uses HuggingFace CLIP (`ViT-B/32`) to compute pairwise cosine distance matrices across concurrent mutation loops.
 * **Geometric Regularizer:** Approximates mesh distortion by computing vertex-wise Laplacian coordinates to trace surface structure degradation.
+* **Stretch / texture-integrity penalty (`edge_stretch`):** mean relative per-edge length change between the undeformed and deformed mesh. Vertex displacement (the CPU sandbox *and* the UE5 WPO shader) leaves UVs pinned per vertex, so any edge-length change stretches/compresses the texture mapped across that edge — the source of texel-density smearing and UV-seam tearing under WPO. This term enters the **distortion** group (alongside Laplacian + normal-consistency) so the policy/sampler is penalized for texture-breaking deformations, not only geometry-roughening ones. Rigid motions give zero. (The sandbox already emits `edge_len_rel_change_*` as telemetry; this promotes it to a reward term.)
+  * **Bake-time companion (Phase 5):** UV-seam vertices are *duplicated* in a UE5 Static Mesh; the baked RGBA must be **identical across coincident duplicates** or WPO moves the two halves apart and tears the seam. The bake step enforces seam-coherent vertex colors (merge-then-average on coincident positions).
+
+### 2.5 Variant Diffusion Sampler (per-instance "DNA" generator)
+
+The variation engine for the single-file + WPO-masking deployment. A single Static
+Mesh asset carries **one** baked vertex-color buffer (shared by every instance), so
+per-instance variation cannot live in vertex color — it travels through UE5
+**Per-Instance Custom Data**: a short float vector written when instances are
+scattered into a level. This module *generates the distribution* of those vectors.
+
+* **Module (`src/diffusion/`, isolated from deform/rewards/rl/hitl).** Performs no
+  deformation and no rendering — it learns and samples the variant-parameter
+  distribution only.
+* **Variant parameter schema (`params.py`, `VariantParamSpec`):** the typed contract
+  between the sampler and the bake. An ordered list of named continuous fields with
+  `[lo, hi]` bounds (e.g. `bend_gain`, `noise_gain`, `scale_gain`, `base_lock`, and —
+  for buildings — `floor_count` flagged `integer`). `to_model`/`from_model` is the
+  bijection to the standardized $[-1,1]$ space the denoiser operates in (integer
+  fields are rounded on decode). The decoded raw vector is exactly the Per-Instance
+  Custom Data payload; the same fields decode into the §2.3 mask gains for the CPU
+  sandbox so the simulation matches the shader.
+* **Denoiser + DDPM (`ddpm.py`):** a small `DiffusionMLP` (sinusoidal time embedding,
+  GELU MLP, optional conditioning on the pooled MeshMAE asset latent $Z$ so the
+  sampler is asset-aware) trained with standard $\epsilon$-prediction DDPM (linear
+  $\beta$ schedule, `q_sample`, MSE loss, ancestral `sample`). Why diffusion rather
+  than the §2.2 PPO policy: the goal is **many plausible variants** — a *distribution*
+  to sample, which is what a denoiser is — not the single reward-optimal mask a policy
+  converges to. NaN-guarded on the loss and on every sampled batch (CLAUDE.md).
+* **Texture-safe by construction:** training samples are filtered through the §2.4
+  penalties (the §2.4 stretch term especially), so the learned distribution only
+  covers deformations that do not smear/tear textures under WPO. With no artist data,
+  the bootstrap distribution is rejection-sampled from random gains scored by those
+  deterministic penalties — using existing models/constraints, no new labels.
+* **Output:** $K$ sampled variant vectors → written as Per-Instance Custom Data on the
+  $K$ placed HISM/Nanite instances; the §3 WPO shader combines them with the shared
+  baked masks to render $K$ distinct instances from one mesh file.
 
 ---
 

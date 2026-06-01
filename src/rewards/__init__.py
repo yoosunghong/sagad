@@ -15,6 +15,7 @@ Geometric Regularizer of ARCHITECT.md sec. 2.4.
 
 from .penalties import (
     PenaltyWeights,
+    edge_stretch,
     evaluate_penalties,
     ground_contact,
     laplacian_coordinates,
@@ -32,6 +33,7 @@ from .preference import (
 
 __all__ = [
     "PenaltyWeights",
+    "edge_stretch",
     "evaluate_penalties",
     "ground_contact",
     "laplacian_coordinates",

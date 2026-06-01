@@ -43,6 +43,7 @@ class PenaltyWeights:
 
     laplacian: float = 1.0
     normal: float = 1.0
+    stretch: float = 1.0
     ground_gap: float = 1.0
     ground_penetration: float = 1.0
 
@@ -101,6 +102,23 @@ def normal_consistency(orig_pos: torch.Tensor, new_pos: torch.Tensor,
     return torch.relu(ang_n - ang_o).mean()
 
 
+def edge_stretch(orig_pos: torch.Tensor, new_pos: torch.Tensor,
+                 edge_index: torch.Tensor) -> torch.Tensor:
+    """Mean relative edge-length change -- a UV/texel-stretch proxy.
+
+    Vertex displacement (the CPU sandbox *and* the UE5 WPO shader) leaves UVs
+    pinned per vertex, so any change in an edge's length stretches/compresses
+    the texture mapped across it. Penalizing it bounds texel-density smearing
+    and the UV-seam tear risk under WPO -- distortions the Laplacian/normal
+    terms do not see (a uniform radial swell is locally smooth yet stretches
+    every texel). Zero for any rigid motion (edge lengths preserved).
+    """
+    src, dst = edge_index[0], edge_index[1]
+    l0 = (orig_pos[src] - orig_pos[dst]).norm(dim=1)
+    l1 = (new_pos[src] - new_pos[dst]).norm(dim=1)
+    return ((l1 - l0).abs() / l0.clamp(min=_EPS)).mean()
+
+
 # -- physics ----------------------------------------------------------------
 
 def ground_contact(orig_pos: torch.Tensor, new_pos: torch.Tensor,
@@ -152,11 +170,13 @@ def evaluate_penalties(orig_data: Data, new_pos: torch.Tensor,
 
     lap = laplacian_distortion(orig_pos, new_pos, orig_data.edge_index)
     nrm = normal_consistency(orig_pos, new_pos, faces, face_adjacency)
+    stretch = edge_stretch(orig_pos, new_pos, orig_data.edge_index)
     gap, pen = ground_contact(orig_pos, new_pos, up=up)
 
     terms = {
         "laplacian": float(lap),
         "normal": float(nrm),
+        "stretch": float(stretch),
         "ground_gap": float(gap),
         "ground_penetration": float(pen),
     }
@@ -164,16 +184,17 @@ def evaluate_penalties(orig_data: Data, new_pos: torch.Tensor,
         if not np.isfinite(v):
             raise ValueError(f"NaN/Inf detected in penalty term '{k}'")
 
-    distortion = w.laplacian * terms["laplacian"] + w.normal * terms["normal"]
+    distortion = (w.laplacian * terms["laplacian"] + w.normal * terms["normal"]
+                  + w.stretch * terms["stretch"])
     physics = (w.ground_gap * terms["ground_gap"]
                + w.ground_penetration * terms["ground_penetration"])
     terms["distortion_total"] = distortion
     terms["physics_total"] = physics
 
     log.info(
-        "penalties | laplacian=%.5f normal=%.5f ground(gap/pen)=%.5f/%.5f "
+        "penalties | laplacian=%.5f normal=%.5f stretch=%.5f ground(gap/pen)=%.5f/%.5f "
         "=> distortion=%.5f physics=%.5f",
-        terms["laplacian"], terms["normal"], terms["ground_gap"],
+        terms["laplacian"], terms["normal"], terms["stretch"], terms["ground_gap"],
         terms["ground_penetration"], distortion, physics,
     )
     return terms
