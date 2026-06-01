@@ -106,6 +106,7 @@ ue/*.opensdf
 ue/*.opendb
 ue/*.sdf
 ue/*.suo
+ue/*.vsconfig
 # Tracked on purpose: ue/Source, ue/Config, ue/Content, ue/Plugins/*/Source,
 # ue/Plugins/*/Content, ue/*.uproject, ue/Plugins/*/*.uplugin
 
