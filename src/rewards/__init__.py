@@ -22,6 +22,13 @@ from .penalties import (
     normal_consistency,
 )
 from .heuristic import HeuristicWeights, batch_diversity, heuristic_reward
+from .preference import (
+    BradleyTerryReward,
+    TrainConfig,
+    bt_loss,
+    pairwise_accuracy,
+    train_reward_model,
+)
 
 __all__ = [
     "PenaltyWeights",
@@ -33,4 +40,9 @@ __all__ = [
     "HeuristicWeights",
     "batch_diversity",
     "heuristic_reward",
+    "BradleyTerryReward",
+    "TrainConfig",
+    "bt_loss",
+    "pairwise_accuracy",
+    "train_reward_model",
 ]
