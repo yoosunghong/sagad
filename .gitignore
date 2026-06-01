@@ -43,19 +43,7 @@ outputs/
 # Weights & Biases
 wandb/
 
-# 3D Asset files (large binaries)
-*.fbx
-*.obj
-*.mtl
-*.glb
-*.gltf
-*.usd
-*.usda
-*.usdc
-*.usdz
-*.abc
-*.ply
-*.stl
+
 
 # Dataset / cache directories
 cache/
