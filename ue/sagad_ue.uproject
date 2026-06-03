@@ -30,6 +30,14 @@
 		{
 			"Name": "GameplayStateTree",
 			"Enabled": true
+		},
+		{
+			"Name": "RemoteControlActorModifierBridge",
+			"Enabled": true
+		},
+		{
+			"Name": "RemoteControlComponents",
+			"Enabled": true
 		}
 	]
 }
